@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl", "ratchet-wgl\ratchet-wgl.csproj", "{89A62FBA-BA7A-4F9F-9653-3B83E81F720C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{AE993FDC-0C7B-49E3-8AF2-7336DFA77D0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyWindow", "Samples\EmptyWindow\EmptyWindow.csproj", "{686C5390-C3DE-4A6E-ABEB-BF629F716F63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Ratchet.Drawing.OpenGL.WGL.nuspec = Build\Ratchet.Drawing.OpenGL.WGL.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-net45", "Build\ratchet-wgl-net45\ratchet-wgl-net45.csproj", "{6884D1BB-EE12-40C4-A060-0BA77E2734AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-net40", "Build\ratchet-wgl-net40\ratchet-wgl-net40.csproj", "{28E19065-167E-4039-A204-AD87BF7F1AE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89A62FBA-BA7A-4F9F-9653-3B83E81F720C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A62FBA-BA7A-4F9F-9653-3B83E81F720C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A62FBA-BA7A-4F9F-9653-3B83E81F720C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A62FBA-BA7A-4F9F-9653-3B83E81F720C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{686C5390-C3DE-4A6E-ABEB-BF629F716F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{686C5390-C3DE-4A6E-ABEB-BF629F716F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{686C5390-C3DE-4A6E-ABEB-BF629F716F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{686C5390-C3DE-4A6E-ABEB-BF629F716F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6884D1BB-EE12-40C4-A060-0BA77E2734AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6884D1BB-EE12-40C4-A060-0BA77E2734AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6884D1BB-EE12-40C4-A060-0BA77E2734AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6884D1BB-EE12-40C4-A060-0BA77E2734AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{686C5390-C3DE-4A6E-ABEB-BF629F716F63} = {AE993FDC-0C7B-49E3-8AF2-7336DFA77D0F}
+		{6884D1BB-EE12-40C4-A060-0BA77E2734AF} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
+		{28E19065-167E-4039-A204-AD87BF7F1AE8} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7881FC70-3876-4AD5-A006-14674A8F4842}
+	EndGlobalSection
+EndGlobal

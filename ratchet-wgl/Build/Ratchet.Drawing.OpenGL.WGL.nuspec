@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2016/06/nuspec.xsd">
+  <metadata>
+    <id>Ratchet.Drawing.OpenGL.WGL</id>
+    <version>1.0.0.0</version>
+    <authors>rboissel</authors>
+    <owners>rboissel</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/rboissel/ratchet-wgl</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/rboissel/ratchet/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+    <description>Ratchet WGL is there to wrap WGL functions in order to be used in a .NET program.</description>
+    <copyright>Copyright ©2018 Raphael Boissel</copyright>
+    <language>en-US</language>
+    <tags>ratchet wgl opengl drawing windows</tags>
+  </metadata>
+</package>
