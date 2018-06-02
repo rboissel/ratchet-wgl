@@ -7,8 +7,8 @@
     <ProjectGuid>{28E19065-167E-4039-A204-AD87BF7F1AE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ratchet_wgl_net40</RootNamespace>
-    <AssemblyName>ratchet-wgl-net40</AssemblyName>
+    <RootNamespace>ratchet_wgl</RootNamespace>
+    <AssemblyName>ratchet-wgl</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -22,7 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>..\..\bin\Debug\ratchet-wgl\lib\net40\ratchet-wgl-net40.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\Debug\ratchet-wgl\lib\net40\ratchet-wgl.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,7 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>..\..\bin\Release\ratchet-wgl\lib\net40\ratchet-wgl-net40.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\Release\ratchet-wgl\lib\net40\ratchet-wgl.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
