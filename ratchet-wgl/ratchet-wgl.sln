@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl", "ratchet-wgl\ratchet-wgl.csproj", "{89A62FBA-BA7A-4F9F-9653-3B83E81F720C}"
 EndProject
@@ -17,6 +17,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-net45", "Build\ratchet-wgl-net45\ratchet-wgl-net45.csproj", "{6884D1BB-EE12-40C4-A060-0BA77E2734AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-net40", "Build\ratchet-wgl-net40\ratchet-wgl-net40.csproj", "{28E19065-167E-4039-A204-AD87BF7F1AE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-netstandard20", "Build\ratchet-wgl-netstandard20\ratchet-wgl-netstandard20.csproj", "{F66ED60A-E8C3-49BD-94BA-126F7BB46FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-netstandard13", "Build\ratchet-wgl-netstandard13\ratchet-wgl-netstandard13.csproj", "{83F221BC-F75B-4DC0-A0C9-7AE2A77F3C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-wgl-net46", "Build\ratchet-wgl-net46\ratchet-wgl-net46.csproj", "{8AFCBBEB-E4A6-45A9-94D7-C2A5BC94B979}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +46,18 @@ Global
 		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E19065-167E-4039-A204-AD87BF7F1AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66ED60A-E8C3-49BD-94BA-126F7BB46FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66ED60A-E8C3-49BD-94BA-126F7BB46FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66ED60A-E8C3-49BD-94BA-126F7BB46FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66ED60A-E8C3-49BD-94BA-126F7BB46FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F221BC-F75B-4DC0-A0C9-7AE2A77F3C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F221BC-F75B-4DC0-A0C9-7AE2A77F3C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F221BC-F75B-4DC0-A0C9-7AE2A77F3C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F221BC-F75B-4DC0-A0C9-7AE2A77F3C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFCBBEB-E4A6-45A9-94D7-C2A5BC94B979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFCBBEB-E4A6-45A9-94D7-C2A5BC94B979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFCBBEB-E4A6-45A9-94D7-C2A5BC94B979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFCBBEB-E4A6-45A9-94D7-C2A5BC94B979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +66,9 @@ Global
 		{686C5390-C3DE-4A6E-ABEB-BF629F716F63} = {AE993FDC-0C7B-49E3-8AF2-7336DFA77D0F}
 		{6884D1BB-EE12-40C4-A060-0BA77E2734AF} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
 		{28E19065-167E-4039-A204-AD87BF7F1AE8} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
+		{F66ED60A-E8C3-49BD-94BA-126F7BB46FD1} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
+		{83F221BC-F75B-4DC0-A0C9-7AE2A77F3C03} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
+		{8AFCBBEB-E4A6-45A9-94D7-C2A5BC94B979} = {3C2CD76B-74F5-4C3D-A375-7DFBBFBD3595}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7881FC70-3876-4AD5-A006-14674A8F4842}

@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>ratchet_wgl_netstandard20</RootNamespace>
+    <AssemblyName>ratchet-wgl</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;NET_STANDARD</DefineConstants>
+    <DocumentationFile>..\..\bin\Debug\ratchet-wgl\lib\netstandard2.0\ratchet-wgl.xml</DocumentationFile>
+    <OutputPath>..\..\bin\Debug\ratchet-wgl\lib\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;NET_STANDARD</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\..\bin\Release\ratchet-wgl\lib\</OutputPath>
+    <DocumentationFile>..\..\bin\Release\ratchet-wgl\lib\netstandard2.0\ratchet-wgl.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\ratchet-wgl\WGL.cs" Link="WGL.cs" />
+    <Compile Include="..\..\ratchet-wgl\WGLContext.cs" Link="WGLContext.cs" />
+  </ItemGroup>
+
+</Project>

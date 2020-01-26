@@ -91,11 +91,6 @@ namespace Ratchet.Drawing.OpenGL
             internal const uint PFD_SUPPORT_OPENGL = 32;
             internal const uint PFD_GENERIC_ACCELERATED = 4096;
 
-
-
-
-
-
             public PIXELFORMATDESCRIPTOR(uint dwFlags, byte iPixelType, byte cColorBits, byte cDepthBits)
             {
                 nSize = (ushort)sizeof(PIXELFORMATDESCRIPTOR);
@@ -194,6 +189,7 @@ namespace Ratchet.Drawing.OpenGL
             return new Context(HDC, HWGLC);
         }
 
+#if !NET_STANDARD
         /// <summary>
         /// Create a WGL Context for the specified Windows Form. It is up to the caller to
         /// have configured the window correctly for this (see: Windows.Form.CreateParams)
@@ -226,6 +222,35 @@ namespace Ratchet.Drawing.OpenGL
         {
             IntPtr HWND = UserControl.Handle;
             if (HWND.ToInt64() == 0) { throw new Exception("Invalid user control handle"); }
+            IntPtr HDC = GetDC(HWND);
+            return CreateContext(HDC, PixelFormatDescriptor);
+        }
+#endif
+        /// <summary>
+        /// Create a WGL Context for the specified Window. It is up to the caller to
+        /// have configured the window correctly for this (see: Windows.Form.CreateParams)
+        /// and to pass a valid handle to it (see: Form.Handle)
+        /// </summary>
+        /// <param name="HWND">The Window handle that will be used to create the context</param>
+        /// <returns></returns>
+        static public Context CreateContextFromWindowHandle(IntPtr HWND)
+        {
+            PIXELFORMATDESCRIPTOR desc = new PIXELFORMATDESCRIPTOR(PIXELFORMATDESCRIPTOR.PFD_DOUBLEBUFFER, PIXELFORMATDESCRIPTOR.PFD_TYPE_RGBA, 32, 32);
+            return CreateContextFromWindowHandle(HWND, desc);
+        }
+
+        /// <summary>
+        /// Create a WGL Context for the specified Window. It is up to the caller to
+        /// have configured the window correctly for this (see: Windows.Form.CreateParams)
+        /// and to pass a valid handle to it (see: Form.Handle)
+        /// </summary>
+        /// <param name="HWND">The Window handle that will be used to create the context</param>
+        /// <param name="PixelFormatDescriptor"></param>
+        /// <returns></returns>
+        static public Context CreateContextFromWindowHandle(IntPtr HWND, PIXELFORMATDESCRIPTOR PixelFormatDescriptor)
+        {
+            PixelFormatDescriptor.dwFlags |= PIXELFORMATDESCRIPTOR.PFD_DRAW_TO_WINDOW;
+            if (HWND.ToInt64() == 0) { throw new Exception("Invalid from handle"); }
             IntPtr HDC = GetDC(HWND);
             return CreateContext(HDC, PixelFormatDescriptor);
         }
